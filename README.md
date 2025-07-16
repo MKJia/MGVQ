@@ -19,6 +19,11 @@
 
 - ```[July 2025]``` Released [paper](https://arxiv.org/abs/2507.07997).
 
+## 🔨TO DO LIST
+- [ ] Training code.
+- [ ] More demos.
+- [ ] Huggingface demos.
+
 ## 🗄️Demos
 - 🔥 Qualitative reconstruction images with $16$ x downsampling on $2560$ x $1440$ UHDBench dataset. 
 
