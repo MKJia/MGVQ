@@ -23,6 +23,7 @@
 - [ ] Training code.
 - [ ] More demos.
 - [ ] Huggingface demos.
+- [ ] Release zero-shot reconstruction benchmarks.
 
 ## 🗄️Demos
 - 🔥 Qualitative reconstruction images with $16$ x downsampling on $2560$ x $1440$ UHDBench dataset. 
