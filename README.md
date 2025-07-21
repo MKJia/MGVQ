@@ -2,9 +2,9 @@
 
 <h1>MGVQ: Could VQ-VAE Beat VAE? A Generalizable Tokenizer with Multi-group Quantization</h1>
 
-<p align="center">
-<a href="https://arxiv.org/abs/2507.07997"><img src="https://img.shields.io/badge/ArXiv-2507.07997-%23840707.svg" alt="ArXiv"></a>
-</p>
+[![arXiv](https://img.shields.io/badge/ArXiv-2507.07997-%23840707.svg)](https://arxiv.org/abs/2507.07997) 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/mgvq-could-vq-vae-beat-vae-a-generalizable/image-reconstruction-on-imagenet)](https://paperswithcode.com/sota/image-reconstruction-on-imagenet?p=mgvq-could-vq-vae-beat-vae-a-generalizable)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/mgvq-could-vq-vae-beat-vae-a-generalizable/image-reconstruction-on-ultra-high-resolution)](https://paperswithcode.com/sota/image-reconstruction-on-ultra-high-resolution?p=mgvq-could-vq-vae-beat-vae-a-generalizable)
 
 [Mingkai Jia](https://scholar.google.com/citations?user=fcpTdvcAAAAJ&hl=zh-CN)<sup>1,2</sup>, [Wei Yin](https://yvanyin.net/)<sup>2*§</sup>, [Xiaotao Hu](https://huxiaotaostasy.github.io/)<sup>1,2</sup>, [Jiaxin Guo](https://wrld.github.io/)<sup>3</sup>, [Xiaoyang Guo](https://xy-guo.github.io/)<sup>2</sup><br>
 [Qian Zhang](https://scholar.google.com.hk/citations?hl=zh-CN&user=pCY-bikAAAAJ)<sup>2</sup>, [Xiao-Xiao Long](https://www.xxlong.site/)<sup>4</sup>, [Ping Tan](https://scholar.google.com/citations?user=XhyKVFMAAAAJ&hl=en)<sup>1</sup><br>
