@@ -22,8 +22,56 @@
 ## 🔨TO DO LIST
 - [ ] Training code.
 - [ ] More demos.
-- [ ] Huggingface demos.
-- [ ] Release zero-shot reconstruction benchmarks.
+- [x] Models & Evaluation code.
+- [x] Huggingface models.
+- [x] Release zero-shot reconstruction benchmarks.
+
+## 🙈 Model Zoo
+| Model | Downsample | Groups | Codebook Size | Training Data | Link |
+|---|---|---|---|---|---|
+|mgvq-f8c32-g4|8|4|32768|imagenet| [link](https://huggingface.co/mkjia/MGVQ/blob/main/mgvq_f8c32_g4.pt) |
+|mgvq-f8c32-g8|8|8|16384|imagenet| [link](https://huggingface.co/mkjia/MGVQ/blob/main/mgvq_f8c32_g8.pt) |
+|mgvq-f16c32-g4|16|4|32768|imagenet| [link](https://huggingface.co/mkjia/MGVQ/blob/main/mgvq_f16c32_g4.pt) |
+|mgvq-f16c32-g8|16|8|16384|imagenet| [link](https://huggingface.co/mkjia/MGVQ/blob/main/mgvq_f16c32_g8.pt) |
+|mgvq-f16c32-g4-mix|16|4|32768|mix| [link](https://huggingface.co/mkjia/MGVQ/blob/main/mgvq_f16c32_g4_mix.pt) |
+|mgvq-f32c32-g8-mix|32|8|16384|mix| [link](https://huggingface.co/mkjia/MGVQ/blob/main/mgvq_f32c32_g8_mix.pt) |
+
+## 🔑 Quick Start
+<a id="quick start"></a>
+
+### Installation
+
+```bash
+git clone https://github.com/MKJia/MGVQ.git
+cd MGVQ
+pip3 install requirements.txt
+```
+
+### Download models
+Download the pretrained models from our [model zoo](https://huggingface.co/mkjia/MGVQ/tree/main) to your `/path/to/your/ckpt`.
+
+### Data Preparation
+Try our UHDBench dataset on [huggingface](https://huggingface.co/datasets/mkjia/UHDBench/tree/main) and download to your `/path/to/your/dataset`.
+
+### Evaluation on Reconstruction
+Remember to change the paths of `ckpt` and `dataset_root`, and make sure you are evaluating the expected `model` on `dataset`.
+```bash
+cd evaluation
+python3 eval_recon.sh
+```
+
+### Generation Demo&Evaluation
+You can download the pretrained GPT model for generation on [huggingface](https://huggingface.co/datasets/mkjia/MGVQ/blob/main/MGVQ_GPT_XXL.pt), and test it with our `mgvq-f16c32-g4` [tokenizer model](https://huggingface.co/mkjia/MGVQ/blob/main/mgvq_f16c32_g4.pt) for demo image sampling. Remember to change the paths of `gpt_ckpt` and `vq_ckpt`. 
+```
+cd evaluation
+python3 demo_gen.sh
+```
+We also provide our .npz file on [huggingface](https://huggingface.co/datasets/mkjia/MGVQ/blob/main/GPT_XXL_300ep_topk_12.npz) sampled by `sample_c2i_ddp.py` for evaluation.
+```
+cd evaluation
+python3 evaluator.py /path/to/your/VIRTUAL_imagenet256_labeled.npz /path/to/your/GPT_XXL_300ep_topk_12.npz
+```
+
 
 ## 🗄️Demos
 - 🔥 Qualitative reconstruction images with $16$ x downsampling on $2560$ x $1440$ UHDBench dataset. 
