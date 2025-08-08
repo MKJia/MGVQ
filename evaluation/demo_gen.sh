@@ -9,7 +9,5 @@ python sample_c2i.py \
 --groups-to-use 4 \
 --top-k 12 \
 --cfg-scale 4.0 \
---gpt-ckpt /horizon-bucket/saturn_v_dev/mingkai.jia/pretrained_models/dcvq/tmp/arhead_328ep.pt \
---vq-ckpt /horizon-bucket/saturn_v_dev/mingkai.jia/pretrained_models/dcvq/tmp/in_f16_c2f_useall_540k.pt
-# --gpt-ckpt \path\to\your\gpt_ckpt
-# --vq-ckpt \path\to\your\vq_ckpt
+--gpt-ckpt \path\to\your\gpt_ckpt
+--vq-ckpt \path\to\your\vq_ckpt
