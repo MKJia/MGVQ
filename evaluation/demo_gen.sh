@@ -9,5 +9,5 @@ python sample_c2i.py \
 --groups-to-use 4 \
 --top-k 12 \
 --cfg-scale 4.0 \
---gpt-ckpt \path\to\your\gpt_ckpt
+--gpt-ckpt \path\to\your\gpt_ckpt \
 --vq-ckpt \path\to\your\vq_ckpt
