@@ -18,7 +18,7 @@
 ## 🚀News
 - ```[August 2025]``` Released Inference Code
 - ```[August 2025]``` Released [model zoo](https://huggingface.co/mkjia/MGVQ/tree/main).
-- ```[August 2025]``` Released [UHDBench dataset](https://huggingface.co/datasets/mkjia/UHDBench/tree/main).
+- ```[August 2025]``` Our proposed super-resolution image reconstruction [UHDBench dataset](https://huggingface.co/datasets/mkjia/UHDBench/tree/main) is released.
 - ```[July 2025]``` Released [paper](https://arxiv.org/abs/2507.07997).
 
 ## 🔨TO DO LIST
