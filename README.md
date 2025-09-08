@@ -3,8 +3,7 @@
 <h1>MGVQ: Could VQ-VAE Beat VAE? A Generalizable Tokenizer with Multi-group Quantization</h1>
 
 [![arXiv](https://img.shields.io/badge/ArXiv-2507.07997-%23840707.svg)](https://arxiv.org/abs/2507.07997) 
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/mgvq-could-vq-vae-beat-vae-a-generalizable/image-reconstruction-on-imagenet)](https://paperswithcode.com/sota/image-reconstruction-on-imagenet?p=mgvq-could-vq-vae-beat-vae-a-generalizable)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/mgvq-could-vq-vae-beat-vae-a-generalizable/image-reconstruction-on-ultra-high-resolution)](https://paperswithcode.com/sota/image-reconstruction-on-ultra-high-resolution?p=mgvq-could-vq-vae-beat-vae-a-generalizable)
+
 
 [Mingkai Jia](https://scholar.google.com/citations?user=fcpTdvcAAAAJ&hl=zh-CN)<sup>1,2</sup>, [Wei Yin](https://yvanyin.net/)<sup>2*§</sup>, [Xiaotao Hu](https://huxiaotaostasy.github.io/)<sup>1,2</sup>, [Jiaxin Guo](https://wrld.github.io/)<sup>3</sup>, [Xiaoyang Guo](https://xy-guo.github.io/)<sup>2</sup><br>
 [Qian Zhang](https://scholar.google.com.hk/citations?hl=zh-CN&user=pCY-bikAAAAJ)<sup>2</sup>, [Xiao-Xiao Long](https://www.xxlong.site/)<sup>4</sup>, [Ping Tan](https://scholar.google.com/citations?user=XhyKVFMAAAAJ&hl=en)<sup>1</sup><br>
@@ -16,9 +15,10 @@
 
 
 ## 🚀News
+- ```[August 2025]``` Achieve SOTA at paperwithcode leaderboards: Image Reconstruction on ImageNet and UHDBench. <image src="./assets/SOTA_recon_fid_imagenet_badge.jpg"/> <image src="./assets/SOTA_recon_PSNR_UHD_badge.jpg"/>
 - ```[August 2025]``` Released Inference Code
 - ```[August 2025]``` Released [model zoo](https://huggingface.co/mkjia/MGVQ/tree/main).
-- ```[August 2025]``` Our proposed super-resolution image reconstruction [UHDBench dataset](https://huggingface.co/datasets/mkjia/UHDBench/tree/main) is released.
+- ```[August 2025]``` Released dataset for ultra-high-definition image reconstruction evaluation. Our proposed super-resolution image reconstruction [UHDBench dataset](https://huggingface.co/datasets/mkjia/UHDBench/tree/main) is released.
 - ```[July 2025]``` Released [paper](https://arxiv.org/abs/2507.07997).
 
 ## 🔨TO DO LIST
@@ -83,6 +83,20 @@ python3 evaluator.py /path/to/your/VIRTUAL_imagenet256_labeled.npz /path/to/your
 - 🔥 Qualitative class-to-image generation of Imagenet. The classes are dog(Golden Retriever and Husky), cliff, and bald eagle.
 
 <image src="./assets/qual_gen.png"/>
+
+- 🔥 Reconstruction evaluation on 256×256 ImageNet benchmark. 
+
+<image src="./assets/recon_tab_1.jpg"/>
+
+- 🔥 Zero-shot reconstruction evaluation with a downsample ratio of 16 on 512×512 datasets.
+
+<image src="./assets/recon_tab_2.jpg"/>
+
+- 🔥 Zero-shot reconstruction evaluation with a downsample ratio of 16 on 2560×1440 datasets.
+
+<div align="center"><image src="./assets/recon_tab_3.jpg"/></image></div>
+  
+## 🗄️Demos
 
 ## 📌 Citation
 
