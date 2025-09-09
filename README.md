@@ -95,7 +95,27 @@ python3 evaluator.py /path/to/your/VIRTUAL_imagenet256_labeled.npz /path/to/your
 - 🔥 Zero-shot reconstruction evaluation with a downsample ratio of 16 on 2560×1440 datasets.
 
 <div align="center"><image src="./assets/recon_tab_3.jpg"/></image></div>
-  
+
+- 🔥 Reconstruction evaluation on TokBench 256x256 resolution.
+
+| Method | Type  | Factor | T-ACC(small)↑ |T-ACC(mean)↑ |T-NED(small)↑ |T-NED(mean)↑ |F-Sim(small)↑ |F-sim(mean)↑ | 
+|--------|:-----:|:---:|:----:|:----:|:----:|:----:|:----:|:----:|
+|  FlexTok  | Discrete |  1D  |0.55  | 6.95  | 7.80 | 21.09 | 0.06 | 0.15 |
+|  VQGAN  | Discrete |  16  | 0.05  | 1.10  | 4.34 | 8.22 | 0.05 | 0.10 |
+|  LlamaGen  | Discrete |  16  | 0.16  | 4.28  | 5.41 | 14.77 | 0.07 | 0.15 |
+|  OpenMagvit2  | Discrete |  16  | 0.80  | 10.58  | 9.59 | 27.59 | 0.08 | 0.20 |
+|  VAR  | Discrete |  16  | 1.24  | 15.74  | 10.89 | 34.19 | 0.10 | 0.23 |
+| VA-VAE | Continuous | 16 | 6.92 | 37.04 | 25.14 | 56.32 | **0.22** | **0.49** |
+|   MGVQ | Discrete |  16  | **11.08**  | **43.15**  | **32.80** | **62.29** | **0.22** | <ins>0.47</ins> |
+
+| Method | Type  | Factor | T-ACC(small)↑ |T-ACC(mean)↑ |T-NED(small)↑ |T-NED(mean)↑ |F-Sim(small)↑ |F-sim(mean)↑ | 
+|--------|:-----:|:---:|:----:|:----:|:----:|:----:|:----:|:----:|
+|  LlamaGen  | Discrete |  8  | 4.39  | 29.41  | 19.69 | 49.00 | 0.17 | 0.40 |
+|  OpenMagvit2  | Discrete |  8  | 9.33  | 40.24  | 30.82 | 59.97 | 0.23 | 0.48 |
+| SD-3.5 | Continuous | 8 | 36.26 | 67.04 | 59.04 | 80.58 | 0.43 | 0.70 |
+|   MGVQ | Discrete |  8  | **63.83**  | **82.65**  | **80.18** | **90.96** | **0.58** | **0.80** |
+
+
 ## 🗄️Demos
 
 ## 📌 Citation
